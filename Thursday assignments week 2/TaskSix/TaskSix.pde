@@ -34,7 +34,6 @@ void light_function(color top, color middle, color bottom) {
 }
 
 void timer() {
-
   light_function(color(255, 0, 0), color(127, 127, 127), color(127, 127, 127));
 
   int passed_time = millis() - saved_time;
@@ -50,5 +49,6 @@ void timer() {
   }
   if (passed_time > (duration_seconds * 3500)) {
     light_function(color(255, 0, 0), color(127, 127, 127), color(127, 127, 127));
+    saved_time = millis();
   }
 }
