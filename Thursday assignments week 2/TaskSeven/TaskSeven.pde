@@ -2,13 +2,13 @@ int input;
 
 void setup() {
   input = -20;
-  
+
   seven_a();
   seven_b();
 }
 
+//7.a
 void seven_a() {
-  //7.a
   for (int i = 0; i < input; i++) {
     if (i == 6) {
       println("six");
@@ -20,8 +20,8 @@ void seven_a() {
   }
 }
 
+//7.b
 void seven_b() {
-  //7.b
   if (input > 0) {
     for (int i = 0; i < input; i++) {
       if (i == 6) {
