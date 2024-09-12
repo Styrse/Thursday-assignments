@@ -1,5 +1,5 @@
 int saved_time;
-int duration_seconds = 3;
+int duration_seconds = 2;
 
 void setup() {
   size(800, 800);
@@ -7,11 +7,11 @@ void setup() {
 }
 
 void draw() {
-  light();
+  lamp();
   timer();
 }
 
-void light() {
+void lamp() {
   rectMode(CENTER);
   fill(0);
   strokeWeight(35);
@@ -41,13 +41,14 @@ void timer() {
 
   if (passed_time > (duration_seconds * 1000)) {
     light_function(color(127, 127, 127), color(255, 255, 0), color(127, 127, 127));
-    saved_time = millis();
   }
-
-  passed_time = millis() - saved_time;
-
-  if (passed_time > (duration_seconds * 1000)) {
+  if (passed_time > (duration_seconds * 1500)) {
+    light_function(color(127, 127, 127), color(127, 127, 127), color(0, 255, 0));
+  }
+  if (passed_time > (duration_seconds * 3000)) {
     light_function(color(127, 127, 127), color(255, 255, 0), color(127, 127, 127));
-    saved_time = millis();
+  }
+  if (passed_time > (duration_seconds * 3500)) {
+    light_function(color(255, 0, 0), color(127, 127, 127), color(127, 127, 127));
   }
 }
