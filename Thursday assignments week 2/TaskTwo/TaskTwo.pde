@@ -7,7 +7,7 @@ int age = 32;
 println(age);
 
 //2.c
-boolean isHappy = false;
+boolean isHappy = true;
 
 //2.d
 println("Hi, my name is " + name);
