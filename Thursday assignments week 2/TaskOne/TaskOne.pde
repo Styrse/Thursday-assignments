@@ -40,5 +40,5 @@ switch (month) {
     println(month + thirty_one);
     break;
   default:
-    println("Buy a lottery ticket.");
+    println("Tess should bring cake Friday!");
 }
