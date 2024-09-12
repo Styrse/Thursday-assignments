@@ -34,14 +34,20 @@ void light_function(color top, color middle, color bottom) {
 }
 
 void timer() {
-  
+
   light_function(color(255, 0, 0), color(127, 127, 127), color(127, 127, 127));
-  
+
   int passed_time = millis() - saved_time;
 
   if (passed_time > (duration_seconds * 1000)) {
     light_function(color(127, 127, 127), color(255, 255, 0), color(127, 127, 127));
     saved_time = millis();
   }
-  
+
+  passed_time = millis() - saved_time;
+
+  if (passed_time > (duration_seconds * 1000)) {
+    light_function(color(127, 127, 127), color(255, 255, 0), color(127, 127, 127));
+    saved_time = millis();
+  }
 }
