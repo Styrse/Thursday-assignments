@@ -14,7 +14,6 @@ for (int i = 0; i < input; i++) {
 //7.b
 int input2 = 19;
 
-
 if (input2 > 0) {
   for (int i = 0; i < input2; i++) {
     if (i == 6) {
