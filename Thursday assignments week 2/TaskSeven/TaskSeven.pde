@@ -18,7 +18,7 @@ int input2 = 19;
 if (input2 > 0) {
   for (int i = 0; i < input2; i++) {
     if (i == 6) {
-      println("six");
+      println("Six");
     } else if (i == input2/2) {
       println("HALF!");
     } else {
