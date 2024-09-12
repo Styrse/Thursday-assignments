@@ -46,14 +46,13 @@ void methodTwo()
     while (i != weekDay) {
       i++;
       if (i == weekDay) {
-        println(days[i]);
+        print("It is " + days[i]);
       }
     }
-
-
+    
     // Print if it is weekend here:
     if (weekend == true) {
-      println("Weekend");
+      println(" and it is weekend");
     }
   }
 }
