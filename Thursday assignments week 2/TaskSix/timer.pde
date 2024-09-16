@@ -1,5 +1,6 @@
 void timer() {
   int passed_time = millis() - saved_time;
+  println(passed_time);
 
   if (passed_time > (duration_seconds * 3500)) {
     light_function(color(255, 0, 0), color(127, 127, 127), color(127, 127, 127));
