@@ -3,19 +3,14 @@ void setup(){
   println(number);
   println(total(3, 2));
   
-  String message = uppercase("Tess skal have kage med!");
+  String message = uppercase("Tess should bring cake!");
   println(message);
-  println(uppercase("Jesper skal også have kage med!"));
+  println(uppercase("Jesper should also bring cake!"));
   
-  boolean is_up = capital_letter("Jordbærkage");
+  boolean is_up = capital_letter("Strawberry cake");
   println(is_up);
-  println(capital_letter("gulerodskage"));
+  println(capital_letter("Carrot cake"));
 }
-
-//2.a
-
-
-
 
 //2.b
 int total(int x, int y){

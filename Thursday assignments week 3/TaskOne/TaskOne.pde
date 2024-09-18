@@ -7,7 +7,7 @@ void setup(){
 
 //1.b
 void method(){
-  println("Friday Tess will bring cake");
+  println("Hello from the method");
 }
 
 //1.c
