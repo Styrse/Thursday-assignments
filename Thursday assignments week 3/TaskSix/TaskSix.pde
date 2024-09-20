@@ -1,11 +1,15 @@
 void setup() {
-  divisible(22);
+  int x = divisible(22);
+  println(x);
 }
 
-void divisible(int number) {
+int divisible(int number) {
+  int sum = 0;
   for (int i = 1; i <= 100; i++) {
-    if (number%i == 0) {
+    if (i%number == 0) {
       println(i);
+      sum++;
     }
   }
+  return sum;
 }
