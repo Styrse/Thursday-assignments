@@ -1,6 +1,6 @@
-//2. a
+//2. a and 2. d
 String printPartOfWord(String word, int startIndex, int endIndex) {
-  if (startIndex < 0 || endIndex < 0 || startIndex > endIndex) {      //2. d
+  if (startIndex < 0 || endIndex < 0 || startIndex > endIndex) {
     return "Jesper tager kage med";
   } else {
     return word.substring(startIndex, endIndex);
