@@ -12,5 +12,5 @@ for (int i = 0; i < rapperNames.length; i++){
 println("");
 //3. d
 for (int i = 0; i < rapperNames.length; i++){
-  println(i+1 + ". " + rapperNames[i] + " : " + hit[i]);
+  println(i+1 + ". " + rapperNames[i] + " : " + '"' +  hit[i] + '"');
 }
