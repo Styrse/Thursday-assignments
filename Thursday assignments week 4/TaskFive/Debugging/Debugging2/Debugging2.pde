@@ -1,4 +1,3 @@
-void setup()
-{
+void setup() {
   println("Jobs done!");
 }
