@@ -24,6 +24,8 @@ void fillArrayLists() {
 void setup() {
   fillArrayLists();
   printString(stringList);
+  println(returnSum(numberList));
+  println(returnAverage(numberList));
 }
 
 
@@ -33,3 +35,29 @@ void printString(ArrayList<String> betterString) {
     println(s);
   }
 }
+
+//7. c
+int returnSum(ArrayList<Integer> betterNumber){
+  int sum = 0;
+  for (int n : betterNumber){
+    sum += n;
+  }  
+  return sum;
+}
+
+//7. d
+float returnAverage(ArrayList<Integer> moreNumbers){
+  float sum = 0;
+  int count = 0;
+  for (int a : moreNumbers){
+    sum += a;
+    count++;
+  }  
+  return sum/count;
+}
+  
+  
+  
+  
+  
+  
