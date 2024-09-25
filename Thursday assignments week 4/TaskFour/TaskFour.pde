@@ -7,4 +7,6 @@ void setup(){
   
   //4. e
   Square testSquare = new Square(100, 200);
+  //4. g
+  testSquare.display();
 }

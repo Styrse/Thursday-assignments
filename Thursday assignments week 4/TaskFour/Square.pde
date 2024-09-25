@@ -9,4 +9,10 @@ class Square{
     this.xPosition = xPosition;
     this.yPosition = yPosition;
   }
+  
+  //4. f
+  void display(){
+    rectMode(CENTER);
+    rect(xPosition, yPosition, width/10, height/10);
+  }
 }
