@@ -1,17 +1,24 @@
 import java.util.Scanner;
 
+
 public class Main {
     public static void main(String[] args) {
-       Scanner scanName = new Scanner(System.in);
-       System.out.print("Enter your name: ");
+        int retirementAge = 67;
 
-       String name = scanName.nextLine();
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter your name: ");
 
-       System.out.print(name + "enter your age: ");
-       Scanner scanAge = new Scanner(System.in);
+        String name = scan.nextLine();
 
-       int age = scanAge.nextLine();
+        System.out.print(name + " enter your age: ");
+        int age = scan.nextInt();
 
-       System.out.print(age);
+        if (age == retirementAge) {
+            System.out.println("You can retire now");
+        } else if (age > retirementAge) {
+            System.out.println("You have been retired for:  " + (age - retirementAge) + " years");
+        } else {
+            System.out.println("You can retire in: " + (retirementAge - age) + " years");
+        }
     }
 }
