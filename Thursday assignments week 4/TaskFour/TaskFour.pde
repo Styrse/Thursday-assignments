@@ -13,7 +13,7 @@ void setup(){
   //4. g
   testSquare.display();
   
-  //4. i
+  //4. i and 4. j
   for (int i = 0; i < 10; i++){
     squares[i] = new Square((int) random(width), (int) random(height));
     squares[i].display();
