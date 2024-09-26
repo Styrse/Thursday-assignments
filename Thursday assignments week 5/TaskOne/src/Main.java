@@ -12,7 +12,7 @@ public class Main {
         System.out.println(greenTeam.toString());
 
         //1. k
-        String[] teams = {"Yellow thunder", "Silver Sharks", "Violet Vortex", "Pink Panthers", "Ruby Raptors"};
+        String[] teams = {"Blue Blazers", "Silver Sharks", "Violet Vortex", "Purple Panthers", "Ruby Raptors"};
         int[] teamsRank = {10, 7, 12, 3, 5};
 
         Team[] team = new Team[teams.length];
