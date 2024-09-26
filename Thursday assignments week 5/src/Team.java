@@ -18,4 +18,9 @@ public class Team {
     void setRank(int rank){
         this.rank = rank;
     }
+
+    //1. j
+    public String toString(){
+        return "Team: " + teamName + "\nRank: " + rank;
+    }
 }
