@@ -13,4 +13,20 @@ public class Customer {
         count++;
         this.ID = count;
     }
+
+    String getFirstname(){
+        return firstname;
+    }
+
+    String getLastname(){
+        return lastname;
+    }
+
+    String getUsername(){
+        return username;
+    }
+
+    int getID(){
+        return ID;
+    }
 }
