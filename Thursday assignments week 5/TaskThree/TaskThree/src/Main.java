@@ -12,7 +12,6 @@ public class Main {
 
         //Creates random number
         int randomNumber = random.nextInt(minNumber, maxNumber);
-        System.out.println(randomNumber);
 
         System.out.println("Lets play a game of Higher/Lower \nThe number is between 0 and 100");
 
