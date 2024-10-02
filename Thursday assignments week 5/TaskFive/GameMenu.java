@@ -24,6 +24,8 @@ public class GameMenu {
         Scanner scan = new Scanner(System.in);
         int choice = scan.nextInt();
 
+        scan.close();
+
         //5. f
         switch (choice) {
         case 0:
