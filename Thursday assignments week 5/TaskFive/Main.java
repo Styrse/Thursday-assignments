@@ -1,17 +1,24 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//4. e
 public class Main {
+
+	static GameMenu menuOne;
+
 	public static void main(String[] args) {
 
-		//4. f
 		ArrayList<String> actions = new ArrayList<String>(Arrays.asList("Start game", "Resume game", "Pause game", "End game"));
 
-		//4. g
-		GameMenu menuOne = new GameMenu(actions);
+		menuOne = new GameMenu(actions);
 
-		//4. i
-		menuOne.displayMenu();
+		//menuOne.displayMenu();
+
+		//5. d
+		menuOne.getAction();
+	}
+
+	//5. e
+	public static void doAction(int action) {
+		System.out.println(menuOne.getAction());
 	}
 }

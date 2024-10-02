@@ -14,7 +14,7 @@ public class GameMenu {
 
     //4. h
     public static void displayMenu() {
-        for (int i = 0; i < actions.size(); i++){
+        for (int i = 0; i < actions.size(); i++) {
             System.out.println(actions.get(i));
         }
     }
