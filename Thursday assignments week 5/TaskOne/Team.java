@@ -1,26 +1,35 @@
+import java.util.ArrayList;
 //1. b
 public class Team {
 
     //1. c
-    String teamName;
+    private String teamName;
     //1. d
-    int rank;
+    private int rank;
     //1. e
-    String teamPlayerNames;
+    private ArrayList<String> teamPlayerNames = new ArrayList<String>();
 
     //1. f
-    Team(String teamName){
-
+    public Team(String teamName) {
         this.teamName = teamName;
     }
 
     //1. h
-    void setRank(int rank){
+    public void setRank(int rank) {
         this.rank = rank;
     }
 
-    //1. j
-    public String toString(){
-        return "Team: " + teamName + "\nRank: " + rank;
+    //1. j & 1. m
+    public String toString() {
+        String playersNewLine = "";
+        for (String player : teamPlayerNames) {
+            playersNewLine += player + "\n";
+        }
+        return "Team: " + teamName + "\nRank: " + rank + "\nTeam members: \n" + playersNewLine;
+    }
+
+    //1. l
+    public void addPlayer(String teamPlayerName) {
+        teamPlayerNames.add(teamPlayerName);
     }
 }

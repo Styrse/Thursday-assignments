@@ -8,7 +8,7 @@ public class Main {
         //1. i
         greenTeam.setRank(5);
 
-        //1. j - check
+        //1. j
         System.out.println(greenTeam.toString());
 
         //1. k
@@ -21,7 +21,12 @@ public class Main {
             team[i] = new Team(teams[i]);
             team[i].setRank(teamsRank[i]);
             System.out.println(team[i].toString());
-
         }
+
+        greenTeam.addPlayer("Styrse");
+        greenTeam.addPlayer("Jesper");
+        greenTeam.addPlayer("Niki");
+
+        System.out.println(greenTeam.toString());
     }
 }
