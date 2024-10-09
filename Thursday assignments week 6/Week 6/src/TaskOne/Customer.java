@@ -1,16 +1,20 @@
+package TaskOne;
+
+//1. a
 public class Customer {
 
     private String firstname;
     private String lastname;
     private String username;
-    public int id;
-
+    private int id;
     private static int count = 1;
 
+    //1. b
     public Customer(String firstname, String lastname, String username) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.username = username;
+        //1. c
         this.id = count++;
     }
 
@@ -42,6 +46,7 @@ public class Customer {
         return id;
     }
 
+    //1. d
     public String toString(){
         return "Customer:" + "\nID: " + id + "\nName: " + firstname + " " + lastname + "\nUsername: " + username;
     }
