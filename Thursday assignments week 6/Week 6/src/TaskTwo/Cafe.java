@@ -23,7 +23,7 @@ public class Cafe {
 
         //2. e
         try {
-            File file = new File("coffees.txt");
+            File file = new File("src/TaskTwo/coffees.txt");
             Scanner scan = new Scanner(file);
 
             //2. f
