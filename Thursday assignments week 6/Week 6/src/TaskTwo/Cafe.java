@@ -18,13 +18,20 @@ public class Cafe {
         this.cofffeMenu = cofffeMenu;
     }
 
+    //2. d
     public void loadMenuData(){
-        File file = new File("coffees.txt");
+
+        //2. e
         try {
-            Scanner fileReader = new Scanner(file);
-            System.out.println(fileReader);
-        } catch (FileNotFoundException fnfe){
-            System.out.println(fnfe);
+            File file = new File("coffees.txt");
+            Scanner scan = new Scanner(file);
+
+            //2. f
+            while (scan.hasNextLine()){
+                cofffeMenu.add(scan.nextLine());
+            }
+        } catch (FileNotFoundException e){
+            System.out.println(e);
         }
     }
 }
