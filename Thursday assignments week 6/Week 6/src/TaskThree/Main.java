@@ -32,7 +32,7 @@ public class Main {
 
     }
     //3. j
-    public static int countLamps(Building building) {
+    private static int countLamps(Building building) {
         int totalLamps = 0;
         for (int i = 0; i < building.getRooms().size(); i++) {
             totalLamps += building.getRooms().get(i).getNumberOfLamps();
@@ -40,7 +40,7 @@ public class Main {
         return totalLamps;
     }
 
-    public static int countWindows(Building building){
+    private static int countWindows(Building building){
         int totalWindows = 0;
         for (int i = 0; i < building.getRooms().size(); i++){
             totalWindows += building.getRooms().get(i).getNumberOfWindows();
@@ -48,7 +48,7 @@ public class Main {
         return totalWindows;
     }
     //3. k
-    public static boolean isNormal(Building building) {
+    private static boolean isNormal(Building building) {
         return building.getNumberOfFloors() >= building.getRooms().size();
     }
 }
