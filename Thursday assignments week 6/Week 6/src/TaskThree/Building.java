@@ -1,18 +1,16 @@
+package TaskThree;
+
 import java.util.ArrayList;
 
 //3. d
 public class Building {
     private ArrayList<Room> rooms;
-    private int numberOfBathrooms;
     private int numberOfFloors;
-    private boolean isOfficeBuilding;
 
     //3. e
-    Building(ArrayList<Room> rooms, int numberOfBathrooms, int numberOfFloors, boolean isOfficeBuilding) {
+    Building(ArrayList<Room> rooms, int numberOfFloors) {
         this.rooms = new ArrayList<>(rooms);
-        this.numberOfBathrooms = numberOfBathrooms;
         this.numberOfFloors = numberOfFloors;
-        this.isOfficeBuilding = false;
     }
 
     //3. f
@@ -20,15 +18,15 @@ public class Building {
         return rooms;
     }
 
-    public int getNumberOfBathrooms() {
-        return numberOfBathrooms;
+    public void setRooms(ArrayList<Room> rooms) {
+        this.rooms = rooms;
     }
 
     public int getNumberOfFloors() {
         return numberOfFloors;
     }
 
-    public boolean isOfficeBuilding() {
-        return isOfficeBuilding;
+    public void setNumberOfFloors(int numberOfFloors) {
+        this.numberOfFloors = numberOfFloors;
     }
 }
