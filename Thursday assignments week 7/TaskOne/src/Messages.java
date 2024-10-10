@@ -6,12 +6,14 @@ public class Messages {
         if (cake.contains("r")) {
             if (cake.equals("Strawberry")) {
                 System.out.print('J');
+                methodB(cake);
             } else if (cake.equals("Carrot")) {
                 System.out.print('T');
+                methodB(cake);
+            } else {
+                methodA("Mango cake");
             }
-            methodB(cake);
         } else if (cake.length() > 6 && cake.substring(1, 4).equals(cake.substring(3, 6))) {
-            //(cake.substring(1, 4).equals(cake.substring(3, 6)))
             System.out.print('l');
             System.out.print('d');
             methodE(true, true);
