@@ -1,6 +1,7 @@
-//1. a & 1. b
+//1. a
 public class Messages {
 
+    //1. b
     void methodA(String cake) {
         if (cake.contains("r")) {
             if (cake.equals("Strawberry")) {
@@ -9,12 +10,17 @@ public class Messages {
                 System.out.print('T');
             }
             methodB(cake);
-        } else {
+        } else if (cake.length() > 6) {
+            //(cake.substring(1, 4).equals(cake.substring(3, 6)))
             System.out.print('l');
             System.out.print('d');
             methodE(true, true);
+        } else {
+            System.out.println("Have a good day");
         }
     }
+
+    //(cake.substring(1, 4) == cake.substring(3, 6))
 
     void methodB(String cake) {
         System.out.print('e');
@@ -40,7 +46,7 @@ public class Messages {
 
     void methodC(String cake, boolean goodCake) {
         if (cake.startsWith("D")) {
-            if (goodCake == true){
+            if (goodCake == true) {
                 System.out.print('k');
                 methodC("Eclair", false);
             } else {
@@ -77,9 +83,9 @@ public class Messages {
                 methodD("Opera");
                 methodC("Tiramisu", true);
             }
-        } else if (goodCake == true && badCake == false){
+        } else if (goodCake == true && badCake == false) {
             System.out.print('g');
-            methodE(false,true);
+            methodE(false, true);
             System.out.print('c');
             System.out.print('a');
             methodC("Dream cake", true);
