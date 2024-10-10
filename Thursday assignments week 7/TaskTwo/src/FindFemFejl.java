@@ -1,5 +1,4 @@
-package codeflow;
-
+//2. a & 2. b
 public class FindFemFejl {
 
     public static void main(String[] args) {

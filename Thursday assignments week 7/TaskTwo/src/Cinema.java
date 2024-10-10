@@ -1,5 +1,3 @@
-package codeflow;
-
 public class Cinema {
     String[][] seats;
 
