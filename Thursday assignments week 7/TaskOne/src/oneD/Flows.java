@@ -20,17 +20,25 @@ public class Flows {
     }
 
     public int methodC(String input) {
-        System.out.print("v");
-        methodD(input.length());
+        if (input.length() < 6) {
+            System.out.print("v");
+            methodD(input.length());
+        } else {
+            System.out.print('o');
+        }
+
         return input.length() * 2;
     }
 
     public void methodD(int number) {
-        if (number > 5) {
+        if (number > 5 && number < 25) {
             System.out.print("e");
             System.out.print("r");
-        } else {
+        } else if (number != 25) {
             System.out.print("a");
+        } else {
+            System.out.print('v');
+            System.out.print('t');
         }
         System.out.print(" ");
 
