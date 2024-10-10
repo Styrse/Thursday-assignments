@@ -10,7 +10,7 @@ public class Messages {
                 System.out.print('T');
             }
             methodB(cake);
-        } else if (cake.length() > 6) {
+        } else if (cake.length() > 6 && cake.substring(1, 4).equals(cake.substring(3, 6))) {
             //(cake.substring(1, 4).equals(cake.substring(3, 6)))
             System.out.print('l');
             System.out.print('d');
