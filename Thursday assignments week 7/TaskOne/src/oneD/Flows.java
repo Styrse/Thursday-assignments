@@ -3,34 +3,36 @@ package oneD;
 public class Flows {
 
     public void methodA(String input) {
-        System.out.println("a");
+        System.out.print("J");
         if (!input.equals("start")) {
-            System.out.println("b");
+            System.out.print("b");
             methodB("start");
         } else {
-            System.out.println("d");
-            System.out.println(methodC(input));
+            System.out.print("a");
+            methodD(methodC(input));
 
         }
-        System.out.println("i");
+        System.out.print("s");
     }
 
     public void methodB(String start) {
-        System.out.println("c");
+        System.out.print("j");
     }
 
     public int methodC(String input) {
-        System.out.println("e");
+        System.out.print("v");
         methodD(input.length());
         return input.length() * 2;
     }
 
     public void methodD(int number) {
-        System.out.println("f");
         if (number > 5) {
-            System.out.println("g");
+            System.out.print("e");
+            System.out.print("r");
+        } else {
+            System.out.print("a");
         }
-        System.out.println("h");
+        System.out.print(" ");
 
     }
 
