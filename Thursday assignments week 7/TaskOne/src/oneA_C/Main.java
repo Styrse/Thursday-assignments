@@ -1,3 +1,5 @@
+package oneA_C;
+
 import java.util.Scanner;
 
 public class Main {
