@@ -4,8 +4,15 @@ public class Cinema {
     // Række 0, sæde 0 er altid reserveret til direktøren og skal derfor have værdien X
     // Sæder, der ikke er reserveret, har værdien "O"
     public Cinema(int rows, int seats) {
-        this.seats[0][0] = "X";
         this.seats = new String[rows][seats];
+        //Initialized the array seats
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < seats; j++){
+                this.seats[i][j] = "O";
+            }
+        }
+        this.seats[0][0] = "X";
+
     }
 
     public int getRows() {
