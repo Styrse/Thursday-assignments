@@ -2,48 +2,90 @@
 public class Messages {
 
     void methodA(String cake) {
-        if (cake.equals("Strawberry")) {
-            System.out.println('J');
-        } else if (cake.equals("Carrot")) {
-            System.out.println('T');
+        if (cake.contains("r")) {
+            if (cake.equals("Strawberry")) {
+                System.out.print('J');
+            } else if (cake.equals("Carrot")) {
+                System.out.print('T');
+            }
+            methodB(cake);
+        } else {
+            System.out.print('l');
+            System.out.print('d');
+            methodE(true, true);
         }
-        methodB(cake);
     }
 
     void methodB(String cake) {
-        System.out.println('e');
+        System.out.print('e');
         if (cake.length() == 6) {
-            System.out.println('s');
+            System.out.print('s');
             if (cake.charAt(2) == 'r') {
-                System.out.println('s');
+                System.out.print('s');
             }
         } else if (cake.length() <= 10 && cake.length() > 5) {
-            System.out.println('s');
-            System.out.println('p');
+            System.out.print('s');
+            System.out.print('p');
             methodB("Red Velvet Cake");
             methodD("Opera");
         }
         if (cake.equals("Strawberry") || cake.equals("Carrot")) {
-            System.out.println(' ');
-            methodC("Dream cake");
+            System.out.print(' ');
+            if (cake.equals("Strawberry") || cake.equals("Carrot")) {
+                methodC("Dream cake", false);
+            }
         }
 
     }
 
-    void methodC(String cake) {
+    void methodC(String cake, boolean goodCake) {
         if (cake.startsWith("D")) {
-            System.out.println('s');
-            System.out.println('h');
+            if (goodCake == true){
+                System.out.print('k');
+                methodC("Eclair", false);
+            } else {
+                System.out.print('s');
+                System.out.print('h');
+                methodD("Berlingozzo");
+            }
+        } else if (goodCake != false) {
+            System.out.print('i');
+            System.out.print('n');
+            methodE(true, false);
+        } else {
+            System.out.print('e');
         }
     }
 
     void methodD(String cake) {
         if (cake.equals("Opera")) {
-            System.out.println('r');
+            System.out.print('r');
         } else if (cake != "Berlingozzo") {
-            methodC("Coffee");
+            methodC("Coffee", false);
+        } else {
+            System.out.print('o');
+            System.out.print('u');
+            methodA("Banana cake");
         }
     }
+
+    void methodE(boolean goodCake, boolean badCake) {
+        if (badCake == true) {
+            System.out.print(' ');
+            if (goodCake != !true) {
+                System.out.print('b');
+                methodD("Opera");
+                methodC("Tiramisu", true);
+            }
+        } else if (goodCake == true && badCake == false){
+            System.out.print('g');
+            methodE(false,true);
+            System.out.print('c');
+            System.out.print('a');
+            methodC("Dream cake", true);
+        }
+    }
+
 }
 
 //Jesper/Tess should bring cake
