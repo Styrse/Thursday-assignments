@@ -1,8 +1,10 @@
 //3. a
 public abstract class Person {
-    String name;
 
-    Person(String name) {
+    private String name;
+
+
+    public Person(String name) {
         this.name = name;
     }
 
