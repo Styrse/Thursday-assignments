@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Cafe {
     private ArrayList<String> cofffeMenu = new ArrayList<>();
 
-
     public ArrayList<String> getCofffeMenu() {
         return cofffeMenu;
     }
@@ -30,8 +29,8 @@ public class Cafe {
             while (scan.hasNextLine()){
                 cofffeMenu.add(scan.nextLine());
             }
-        } catch (FileNotFoundException e){
-            System.out.println(e);
+        } catch (FileNotFoundException fnfe){
+            System.out.println(fnfe);
         }
     }
 }

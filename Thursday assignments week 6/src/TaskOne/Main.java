@@ -19,7 +19,7 @@ public class Main {
     //1. f
     public static void printCustomers(ArrayList customers){
         for (Object customer : customers) {
-            System.out.println(customer.toString());
+            System.out.println(customer);
         }
     }
 }
