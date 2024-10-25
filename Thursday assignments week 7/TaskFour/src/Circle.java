@@ -7,15 +7,15 @@ public class Circle implements Shape {
         this.radius = radius;
     }
 
+
+
     @Override
     public double getArea(){
         return Math.PI*Math.pow(radius, 2);
     }
 
     @Override
-    public double draw() {
-        return 0;
+    public void display() {
+        Main.applet.ellipse(Main.applet.width/2, Main.applet.height/2, (float)this.radius, (float)this.radius);
     }
-
-
 }

@@ -3,5 +3,5 @@ public interface Shape {
 
     public double getArea();
 
-    public double draw();
+    public void display();
 }

@@ -1,14 +1,19 @@
 //4. b
 public class Square implements Shape {
 
-    private double lenght;
+    private double length;
 
-    public Square(double lenght){
-        this.lenght = lenght;
+    public Square(double length){
+        this.length = length;
     }
 
     @Override
     public double getArea(){
-        return lenght*lenght;
+        return length*length;
+    }
+
+    @Override
+    public void display() {
+
     }
 }
